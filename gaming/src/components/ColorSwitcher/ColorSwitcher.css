@@ -1,0 +1,51 @@
+.color-switcher-container {
+  width: 100px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(100%, -50%);
+  z-index: 999999;
+  padding: 1rem;
+  transition: all ease-in-out 0.5s;
+}
+
+.color-switcher-container svg {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  color: #0c0f15;
+  animation: rotate360 infinite;
+}
+
+.color-switcher-container-open {
+  transform: translate(0, -50%);
+}
+
+.color-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.color-item {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--theme-color);
+}
+
+@media (max-width: 920px) {
+  .color-switcher-container {
+    width: 80px;
+  }
+
+  .color-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

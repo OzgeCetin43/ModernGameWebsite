@@ -1,0 +1,107 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
+    url("../../assets/images/not-found-bg.png");
+  background-position: center;
+  min-height: 100vh;
+  margin-top: -90px;
+}
+
+.not-found-hero {
+  width: 30%;
+}
+
+.not-found-title {
+  font-size: 3rem;
+}
+
+.not-found-description {
+  width: 30%;
+  text-align: center;
+  line-height: 2;
+  font-size: 1.25rem;
+}
+
+.back-home-button {
+  width: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border: 2px solid var(--theme-color);
+  margin: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+  transition: all ease-in-out 0.5s;
+}
+
+.back-home-button::before {
+  content: "";
+  position: absolute;
+  left: -1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 2px;
+  background-color: var(--theme-color);
+  box-shadow: 0.25rem -0.5rem 0 var(--theme-color),
+    0.25rem 0.5rem 0 var(--theme-color);
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+}
+
+.back-home-button:hover::before {
+  width: 60%;
+  height: 100%;
+  left: -2px;
+  box-shadow: -0.25rem 0 0 var(--theme-color), -0.25rem 0 0 var(--theme-color);
+}
+
+.back-home-button::after {
+  content: "";
+  position: absolute;
+  right: -1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 2px;
+  background-color: var(--theme-color);
+  box-shadow: -0.25rem -0.5rem 0 var(--theme-color),
+    -0.25rem 0.5rem 0 var(--theme-color);
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+}
+
+.back-home-button:hover::after {
+  width: 60%;
+  height: 100%;
+  right: -2px;
+  box-shadow: 0.25rem 0 0 var(--theme-color), 0.25rem 0 0 var(--theme-color);
+}
+
+.back-home-button span {
+  position: relative;
+  z-index: 100;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+@media (max-width: 920px) {
+  .not-found-hero {
+    width: 70%;
+  }
+
+  .not-found-title {
+    font-size: 1.5rem;
+  }
+
+  .not-found-description {
+    width: 70%;
+    font-size: 1rem;
+  }
+}
