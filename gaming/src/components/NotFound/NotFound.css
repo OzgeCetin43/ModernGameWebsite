@@ -38,8 +38,8 @@
   text-transform: uppercase;
   color: #fff;
   background-color: transparent;
-  -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
   transition: all ease-in-out 0.5s;
+  cursor: pointer;
 }
 
 .back-home-button::before {

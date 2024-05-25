@@ -72,11 +72,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
 }
 
 .hero-container-button {
-  width: 50%;
+  width: 30%;
   position: relative;
   display: flex;
   align-items: center;
@@ -87,8 +87,8 @@
   text-transform: uppercase;
   color: #fff;
   background-color: transparent;
-  -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
   transition: all ease-in-out 0.5s;
+  cursor: pointer;
 }
 
 .hero-container-button::before {
@@ -166,6 +166,6 @@
   }
 
   .hero-container-button {
-    width: 100%;
+    width: 70%;
   }
 }

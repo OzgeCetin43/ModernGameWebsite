@@ -20,7 +20,6 @@
   top: 50%;
   transform: translate(-100%, -50%);
   color: #0c0f15;
-  animation: rotate360 infinite;
 }
 
 .color-switcher-container-open {
