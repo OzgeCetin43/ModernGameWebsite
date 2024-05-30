@@ -17,7 +17,7 @@ const Awards = () => {
         <h1 className="awards-title">Game of the year</h1>
         <div className="award-items">
           {awards.map((item) => (
-            <img src={item.image} alt="award" />
+            <img key={item.id} src={item.image} alt="award" />
           ))}
         </div>
       </div>

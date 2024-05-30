@@ -1,0 +1,20 @@
+.banner-container {
+  background-image: url("../../assets/images/banner-bg.png");
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 4rem;
+}
+
+.banner-container img {
+  width: 200px;
+  object-fit: cover;
+}
+
+@media (max-width: 920px) {
+  .banner-container img {
+    width: 100px;
+  }
+}
